@@ -148,9 +148,9 @@ class GoutteDriverFactory implements IMinkDriverFactory
 	 * @return boolean
 	 */
 	private function _isGuzzle6()
-        {
-        	return interface_exists('GuzzleHttp\ClientInterface') && 
-        	version_compare(\GuzzleHttp\ClientInterface::VERSION, '6.0.0', '>=');
-        }
+	{
+		return interface_exists('GuzzleHttp\ClientInterface') && 
+		version_compare(\GuzzleHttp\ClientInterface::VERSION, '6.0.0', '>=');
+	}
 
 }
